@@ -1,0 +1,24 @@
+button {
+    border-radius: 180px;
+    box-shadow: 1px 1px black;
+    background-color: #868686;
+}
+
+input {
+    border-radius: 180px;
+    box-shadow: 1px 1px black;
+    background-color: #868686;
+}
+
+form {
+    border-radius: 180px;
+    box-shadow: 1px 1px black;
+    background-color: #868686;
+}
+
+header {
+    height: 180px;
+    font-size: 16px;
+    background-color: #aacd4e;
+    width: 100%;
+}

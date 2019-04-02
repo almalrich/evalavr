@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}<link rel="stylesheet" href="{{ asset("evalAvril.css") }}">{% endblock %}
+    </head>
+    <header>{% block header %}<h1>le Bon Blog</h1>{% endblock %}</header>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
