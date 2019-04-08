@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ article.titre }}<br>
+
+    <img src="{{ article.image }}"><br>
+
+    {{ article.description }}<br>
+
+  <h2>  Commentaires : </h2><br>
+
+    {% for commentaire in commentaires %}
+
+        <div id="commentaire">
+
+            <hr>
+            {{ form(form) }}
+
+            {{ commentaire.users }}
+
+            <br>
+
+            {{ commentaire.commentaires }}
+
+            <br>
+
+            {{ commentaire.date }}
+
+
+        </div>
+
+    {% endfor %}
+
+
+{% endblock %}

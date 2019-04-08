@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{%  block body %}
+
+    {% for article in articles %}
+
+        <div class="text-text">
+        <h1>{{ article.titre }}</h1><br>
+
+       <a href="{{ path('mainarticleId', {'idArticle': article.id}) }}"><img src="{{ article.image }}"></a><br>
+
+        {{ article.description }}<br>
+
+        </div>
+
+
+    {% endfor %}
+
+
+
+
+
+{% endblock %}

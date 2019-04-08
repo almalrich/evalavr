@@ -12,6 +12,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * @Route("/blogs")
+ * Class BlogsController
+ * @package App\Controller
  */
 class BlogsController extends AbstractController
 {
@@ -49,17 +51,18 @@ class BlogsController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="blogs_show", methods={"GET"})
+     * @Route("/article/{id}", name="blogs_show", methods={"GET"})
      */
-    public function show(Blogs $blog): Response
+    public function show(Request $request, Blogs $blog): Response
     {
+
         return $this->render('blogs/show.html.twig', [
             'blog' => $blog,
         ]);
     }
 
     /**
-     * @Route("/{id}/edit", name="blogs_edit", methods={"GET","POST"})
+     * @Route("/article/{id}/edit", name="blogs_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, Blogs $blog): Response
     {
@@ -81,7 +84,7 @@ class BlogsController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="blogs_delete", methods={"DELETE"})
+     * @Route("/article/{id}", name="blogs_delete", methods={"DELETE"})
      */
     public function delete(Request $request, Blogs $blog): Response
     {

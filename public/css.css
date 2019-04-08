@@ -1,7 +1,22 @@
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2017/09/14/11/13/water-2748657_960_720.png");
+}
+
 button {
     border-radius: 180px;
     box-shadow: 1px 1px black;
     background-color: #868686;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 250px;
+    padding: 5px;
+    margin-left: 40%;
+
+
 }
 
 input {
@@ -11,14 +26,106 @@ input {
 }
 
 form {
-    border-radius: 180px;
+
     box-shadow: 1px 1px black;
     background-color: #868686;
 }
 
+
+
 header {
     height: 180px;
     font-size: 16px;
-    background-color: #aacd4e;
     width: 100%;
+}
+
+.text-text{
+    font-size: 25px;
+
+}
+
+.text-btn {
+    border-radius: 180px;
+    background-color: #868686;
+    color: #ffcc00;
+    font-size: 3vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 35px;
+    color: #313131;
+    text-shadow: 2px 2px black;
+    background-color: grey;
+    border-radius: 180px;
+
+}
+
+.user-info{
+    font-size: 3vh;
+
+    border-radius: 180px;
+
+
+}
+
+#commentaire{
+    font-weight: bold;
+
+}
+
+#hamburger-menu > a{
+    display: inline-block;
+    width: auto;
+    padding: auto;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+#hamburger-menu > span {
+    display: none;
+    text-align: center;
+    line-height: 5px;
+    padding-bottom: 20px;
+}
+
+@media(max-width:1388px){
+    #main{
+        width: 100%;
+    }
+
+    img {
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 812px) {
+    #main {
+        width: 100%;
+
+    }
+
+    #menu-gauche {
+        width: 100%;
+    }
+
+    #contenu {
+        width: 100%;
+    }
+
+    #hamburger-menu > a {
+        display: none;
+    }
+
+    #hamburger-menu > span {
+        display: inline-block;
+    }
+
+    #hamburger-menu:hover > a {
+        width: 80%;
+        display: block;
+        margin: 10px auto;
+    }
 }
